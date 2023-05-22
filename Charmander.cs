@@ -1,4 +1,8 @@
 class Pokemon{
+    public string name;
+    public string strength;
+    public string weakness;
+
     public Pokemon(String name, String strength, String Weakness) {
         this.name = name;
         this.strength = strength;
@@ -9,5 +13,12 @@ class Pokemon{
         Console.WriteLine("name" + "!!!");
         }
 }
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Pokemon anotherOne = new Pokemon("Charmander", "fire", "Water");
+        anotherOne.battleCry();
+    }
+}
 
-Pokemon anotherOne= new Pokemon("Charmander", "fire", "Water");
