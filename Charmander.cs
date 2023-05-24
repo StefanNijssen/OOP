@@ -22,3 +22,16 @@ public class Program
     }
 }
 
+int replay = 0;
+int a = 0;
+while(replay=0){
+    Console.WriteLine("Enter username:");
+    string userName = Console.ReadLine();
+    while(a<=10){
+        battleCry();
+        a++;
+    }
+    Console.WriteLine("Do you want to play again?");
+    int replay = Console.ReadLine();
+}
+Console.WriteLine("Hello world!");
